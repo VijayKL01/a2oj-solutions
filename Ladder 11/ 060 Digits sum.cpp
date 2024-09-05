@@ -4,12 +4,12 @@ int main(){
        int t;
        cin>>t;
        while(t--){
-           long n;
-           cin>>n;
-           if(n%10==9)
-              cout<<n/10+1<<endl;
+           long num;
+           cin>>num;
+           if(num%10==9)
+              cout<<num/10+1<<endl;
            else
-              cout<<n/10<<endl;
+              cout<<num/10<<endl;
        }
        return 0;
 }
