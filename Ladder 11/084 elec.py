@@ -5,17 +5,17 @@ while(t!=0):
         lst[i]=int(lst[i])
         
     x=max(lst)
-    nmax=0
+    maxx=0
     if(x==lst[0]):
-        nmax+=1
+        maxx+=1
     if(x==lst[1]):
-        nmax+=1
+        maxx+=1
     if(x==lst[2]):
-        nmax+=1
-    if(nmax==3):
+        maxx+=1
+    if(maxx==3):
         print('1','1','1')
         print('\n')
-    elif(nmax==2):
+    elif(maxx==2):
         for i in range(len(lst)):
             if(lst[i]==x):
                 print('1',end=' ')
