@@ -1,8 +1,8 @@
-int addDigitsHelper(int num) {
+int addDigitssum(int num) {
     int sum = 0;
     while (num > 0) {
-        int current = num % 10;
-        sum += current;
+        int curr = num % 10;
+        sum += curr;
         num /= 10;
     }
     return sum;
@@ -10,7 +10,7 @@ int addDigitsHelper(int num) {
 
 int addDigits(int num) {
     while (num > 9) {
-        num = addDigitsHelper(num);    
+        num = addDigitssum(num);    
     }
     return num;
 }
