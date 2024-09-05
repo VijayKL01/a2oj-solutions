@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    int x, y, ans, nums[6][6];
+    int x, y, sol, nums[6][6];
 
     for (int i = 1; i < 6; i++)
     {
