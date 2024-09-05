@@ -3,11 +3,11 @@ using namespace std;
 
 int main()
 {
-    int n, a, b, c;
+    int num, a, b, c;
     int sum_a = 0, sum_b = 0, sum_c = 0;
-    cin >> n;
+    cin >> num;
 
-    while (n--)
+    while (num--)
     {
         cin >> a >> b >> c;
         sum_a += a;
