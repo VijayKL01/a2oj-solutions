@@ -17,13 +17,13 @@ void solve()
 
 int main()
 {
-    int tc;
-    tc = 1;
-    //cin >> tc;
+    int ts;
+    ts = 1;
+    
 
-    for (int i = 1; i <= tc; i++)
+    for (int i = 1; i <= ts; i++)
     {
-        //cout << "Case #" << i << ": ";
+       
         solve();
     }
 
