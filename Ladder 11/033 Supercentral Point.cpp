@@ -17,7 +17,7 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    int n, a, i, j, count = 0;
+    int n, a, i, j, cnt = 0;
     int x[1000], y[1000];
     bool up[200], down[200], left[200], right[200];
 
@@ -46,10 +46,10 @@ int main()
     for (i = 0; i < n; i++)
     {
         if (up[i] == true && down[i] == true && left[i] == true && right[i] == true)
-            count++;
+            cnt++;
     }
 
-    cout << count;
+    cout << cnt;
 
     return 0;
 }
