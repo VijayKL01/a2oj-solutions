@@ -1,25 +1,32 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
+
 int main() {
-    string a;
-    cin>>a;
-    int b=a.size();
-    int c=0;
-    for (int i=0;i<b;i++)
-    {
-        if (a[i]=='1' && a[i+1]=='4' && a[i+2]=='4')
-        i=i+2;
-        else if (a[i]=='1' && a[i+1]=='4')
-        i=i+1;
-        else if (a[i]=='1')
-        i=i;
-        else 
-        c=1;
+    string input;
+    cin >> input;
+
+    bool contains_144 = false;
+    for (int i = 0; i < input.length(); i++) {
+        if (input[i] != '1' && input[i] != '4') {
+            contains_144 = false;
+            break;
+        }
+
+        if (i + 2 < input.length() && input[i] == '1' && input[i + 1] == '4' && input[i + 2] == '4') {
+            contains_144 = true;
+            i += 2;
+        } else if (i + 1 < input.length() && input[i] == '1' && input[i + 1] == '4') {
+            i++;
+        }
     }
-    if (c==0)
-    cout<<"YES";
-    else 
-    cout<<"NO";
+
+    if (contains_144) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+
     return 0;
 }
