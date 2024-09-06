@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int t, a, b, c, res=0;
+    int t, a, b, c, result=0;
     
     cin >> t;
     while(t--){
@@ -11,9 +11,9 @@ int main()
         cin >> b;
         cin >> c;
         
-        if (a+b+c>=2) res++;
+        if (a+b+c>=2) result++;
     }
-    cout << res;
+    cout << result;
 
     return 0;
 }
