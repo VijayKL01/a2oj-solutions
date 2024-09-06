@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 {
-    string word;
-    cin >> word;
-    if (word[0] >= 97 && word[0] <= 122)
-        word[0] -= 32;
+    string w;
+    cin >> w;
+    if (w[0] >= 97 && w[0] <= 122)
+        w[0] -= 32;
 
-    cout << word;
+    cout << w;
     return 0;
 }
