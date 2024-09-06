@@ -10,7 +10,7 @@ int main() {
         cin>>c;
         arr[i]=c;
     }
-    int s=0;
+    int t=0;
     sort(arr, arr + a);
     for (int j=0;j<b;j++)
     {
@@ -19,7 +19,7 @@ int main() {
         else 
         break;
     }
-    s=s*(-1);
-    cout <<s;
+    t=t*(-1);
+    cout <<t;
     return 0;
 }
