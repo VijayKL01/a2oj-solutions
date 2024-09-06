@@ -3,10 +3,10 @@ using namespace std;
 
 int main()
 {
-	int n, num, i, j;
-	cin >> n;
-	int arr1[n + 1], arr2[n];
-	for (i = 0, j = n - 1; i < n; i++, j--) {
+	int a, num, i, j;
+	cin >> a;
+	int arr1[a + 1], arr2[a];
+	for (i = 0, j = a - 1; i < a; i++, j--) {
 		cin >> num;
 		arr1[num] = i;
 		arr2[num] = j;
