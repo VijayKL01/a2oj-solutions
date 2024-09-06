@@ -5,7 +5,7 @@ typedef long long int ll;
 
 int main()
 {
-//Recieving values
+
 ll n, m, i;
 cin >> n >> m;
 ll arr[m];
@@ -13,7 +13,7 @@ for (i = 0; i < m; i++) cin >> arr[i];
 
 
 ll t = 1, j = 0;
-t = abs(t - arr[j]); //Distance between house1 and first task
+t = abs(t - arr[j]); 
 for (i = 0; i < m - 1; i++) {
 if (arr[j] <= arr[j + 1])
 t += abs(arr[j] - arr[j + 1]);
@@ -26,4 +26,4 @@ cout << t;
 
 return 0;
 }
-has context menu
+
