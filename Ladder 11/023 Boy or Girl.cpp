@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-   int s,count=0;
+   int s,cnt=0;
    char a[100];
    cin>>a;
    s =strlen(a);
@@ -16,7 +16,7 @@ int main()
             break;
         }
     }
-    int c=s-count;
+    int c=s-cnt;
     if(c%2==0)
     {
         cout<<"CHAT WITH HER!";
