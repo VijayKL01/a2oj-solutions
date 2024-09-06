@@ -13,13 +13,13 @@ int main()
 
     sort(arr, arr + 12);
 
-    int i = 12, sum = 0, count = 0;
+    int i = 12, sum = 0, cnt = 0;
     while (i-- && sum < n)
     {
         sum += arr[i];
         count++;
     }
-    cout << (sum >= n ? count : -1);
+    cout << (sum >= n ? cnt : -1);
 
     return 0;
 }
