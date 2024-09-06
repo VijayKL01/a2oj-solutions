@@ -3,10 +3,10 @@ using namespace std;
 
 int main()
 {
-    int n, a, b, c, r;
-    cin >> n >> a >> b;
+    int num, a, b, c, r;
+    cin >> num >> a >> b;
 
-    c = n - a - 1;
+    c = num - a - 1;
 
     if (c > b)
     {
