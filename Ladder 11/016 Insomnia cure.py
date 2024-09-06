@@ -1,13 +1,13 @@
-k = int(input())
-l = int(input())
-m = int(input())
-n = int(input())
+a = int(input())
+b = int(input())
+c = int(input())
 d = int(input())
+e = int(input())
 
-count = d
+count = e
 
-for i in range(d, -1, -1):
-    if ((i % k != 0) and (i % l != 0) and (i % m != 0) and (i % n != 0)):
+for i in range(e, -1, -1):
+    if ((i % a != 0) and (i % b != 0) and (i % c != 0) and (i % d != 0)):
         count -= 1
 
 print(count)
